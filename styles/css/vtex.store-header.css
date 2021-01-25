@@ -1,3 +1,25 @@
+/* barra  de busqueda*/
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  width: 55%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--login-header) :global(.vtex-login-2-x-container) 
+:global(.vtex-login-2-x-label){
+  color:white;
+  font-size: 12px;
+  font-family: Lato,sans-serif;
+  text-transform: capitalize;
+  /* background-color: red; */
+  /* revisemos si la fuente es todo mejor :/ */
+}
+:global(.vtex-flex-layout-0-x-flexRow--login-header) :global(.vtex-login-2-x-container) 
+:global(.vtex-login-2-x-profileIcon){
+  color:white;
+}
+
+
+
+
 /* add transitions */
 :global(.vtex-sticky-layout-0-x-container)
   :global(.vtex-store-components-3-x-logoLink),
@@ -18,17 +40,19 @@
 
 /* main header desktop has a bigger padding when not stuck */
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  height: 74px;
+  background: #7300e0;
+  /* padding-top: 0.5rem; */
+  /* padding-bottom: 0.5rem; */
 }
 
 /* add a box-shadow to desktop/mobile header when stuck */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+/* :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /*
  * remove the extra padding when stuck from the desktop header
@@ -36,9 +60,11 @@
  */
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  transition: padding 0.3s ease, background 0.3s ease;
+  /* transition: padding 0.3s ease, background 0.3s ease; */
+  height: 74px;
   padding-top: 0;
   padding-bottom: 0;
+  background: #7300e0;
 }
 
 /* if supported add some translucency to the desktop/mobile header background */
@@ -55,20 +81,24 @@
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-    background: rgba(240, 240, 240, 0.8);
+    /* background: rgba(240, 240, 240, 0.8); */
+    height: 74px;
+    background: #7300e0;
   }
 }
 
 /* stick wrapper with the same color as the desktop/mobile header */
-:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
-  background-color: #f0f0f0;
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header),
+:global(.vtex-sticky-layout-0-x-container--sticky-header) {
+  height: 74px;
+  background: #7300e0;
 }
 
 /* resize the logo for neat effect */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+/* :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-store-components-3-x-logoLink) {
   transform: scale(0.85);
-}
+} */
 
 @media (prefers-reduced-motion: reduce) {
   :global(.vtex-sticky-layout-0-x-container)

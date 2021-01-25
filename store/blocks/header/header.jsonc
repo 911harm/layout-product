@@ -73,7 +73,8 @@
     },
     "children": [
       "image#baner-up-header",
-      "flex-layout.row#4-desktop"
+      "flex-layout.row#4-desktop",
+      "flex-layout.row#5-desktop"
     ]
   },
   "flex-layout.row#4-desktop": {
@@ -95,6 +96,30 @@
       // "login"
     ]
   },
+  "flex-layout.row#5-desktop": {
+    "props": {
+      "blockClass": "category-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "category-menu#categories-header"
+      // "flex-layout.col#logo-desktop",
+      // "search-bar",
+      // "flex-layout.col#login-cart-desktop"
+    ]
+  },
+  "category-menu#categories-header": {
+    "props": {
+      // "showAllDepartments": true,
+      // "showSubcategories": true,
+      "menuDisposition": "center"
+      // "departments": []
+    }
+  },
   "flex-layout.col#login-cart-desktop": {
     "props": {
       // "verticalAlign": "middle",
@@ -106,15 +131,26 @@
     ]
   },
   "flex-layout.row#4-1-desktop": {
-    "props":{
+    "props": {
+      "blockClass": "login-header",
       "horizontalAlign": "right",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true
     },
     "children": [
-      "login",
+      "login#header",
       "minicart.v2"
     ]
+  },
+  "login#header": {
+    "props": {
+      "iconLabel":"Mi Cuenta",
+      "showIconProfile": true,
+      "accessCodeTitle": "mi cuenta",
+      "accountOptionLinks":{
+        "cssClass":"icono-login"
+      }
+    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {
@@ -137,7 +173,7 @@
       "title": "Logo",
       "href": "/",
       "url": "https://realplaza.vtexassets.com/arquivos/logo-nuevo-real-plaza.png",
-      "width": "180"
+      "width": "250"
     }
   },
   /*
