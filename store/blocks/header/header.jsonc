@@ -1,30 +1,46 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
+      // "flex-layout.row#1-desktop",
+      // "flex-layout.row#2-desktop",
+      // "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
-
   "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
+    "children": [
+      "telemarketing"
+    ],
     "props": {
       "fullWidth": true
     }
   },
-
   "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
+    "children": [
+      "image#baner-up-header"
+    ],
     "props": {
       "fullWidth": "true"
+    }
+  },
+  "image#baner-up-header": {
+    "props": {
+      "src": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/70869923-459e-4433-8191-f683022fc72d___f2414c46adf695e3db67c50a53b13a2c.jpg",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "baner-up"
     }
   },
   "notification.bar#home": {
@@ -55,23 +71,47 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": [
+      "image#baner-up-header",
+      "flex-layout.row#4-desktop"
+    ]
   },
   "flex-layout.row#4-desktop": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
+      // "flex-layout.col#category-menu",
+      // "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
+      // "locale-switcher",
+      "flex-layout.col#login-cart-desktop"
+      // "login"
+    ]
+  },
+  "flex-layout.col#login-cart-desktop": {
+    "props": {
+      // "verticalAlign": "middle",
+      // "horizontalAlign": "center"
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#4-1-desktop"
+    ]
+  },
+  "flex-layout.row#4-1-desktop": {
+    "props":{
+      "horizontalAlign": "right",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
       "login",
       "minicart.v2"
     ]
@@ -80,27 +120,42 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo#desktop"]
+    "children": [
+      "logo#desktop"
+    ]
   },
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+    ]
   },
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "url": "https://realplaza.vtexassets.com/arquivos/logo-nuevo-real-plaza.png",
       "width": "180"
     }
   },
+  /*
+  
+  
+  
+  
+  
+  */
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": [
+      "sticky-layout#1-mobile"
+    ]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
   },
   "flex-layout.row#1-mobile": {
     "children": [
@@ -118,9 +173,10 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": [
+      "menu#drawer"
+    ]
   },
-
   "menu#drawer": {
     "children": [
       "menu-item#category-apparel",
@@ -131,7 +187,6 @@
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",
