@@ -100,6 +100,10 @@
     }
   },
   "flex-layout.row#rigth-0-1": {
+    "props": {
+      "marginBottom": 3,
+      "marginTop": 3
+    },
     "children": [
       "flex-layout.col#right-col-0-1",
       "flex-layout.col#right-col-0-1-1"
@@ -111,8 +115,13 @@
       "rowGap": 0
     },
     "children": [
-      "vtex.store-components:product-brand"
+      "vtex.store-components:product-brand#product"
     ]
+  },
+  "vtex.store-components:product-brand#product": {
+    "props": {
+      "withLink": "text"
+    }
   },
   "flex-layout.col#right-col-0-1-1": {
     "props": {
@@ -120,12 +129,17 @@
       "rowGap": 0
     },
     "children": [
-      "product-seller-name"
+      "product-seller-name#product"
     ]
+  },
+  "product-seller-name#product": {
+    "props": {
+      "withLink": "text"
+    }
   },
   "flex-layout.row#right-5": {
     "props": {
-      "blockClass":"share-tarjetas",
+      "blockClass": "share-tarjetas",
       "preventVerticalStretch": true,
       "rowGap": 0
     },
@@ -146,10 +160,10 @@
       "product-identifier.product",
       // "product-rating-summary",
       "flex-layout.row#selling-price",
-      // "flex-layout.row#list-price-savings",
+      "flex-layout.row#list-price-savings",
       // "product-installments",
       "sku-selector",
-      "product-quantity",
+      "product-quantity#product",
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
@@ -161,7 +175,9 @@
   },
   "flex-layout.row#product-name": {
     "props": {
-      "marginBottom": 3
+      "fullWidth": false,
+      "marginBottom": 5,
+      "marginTop": 3
     },
     "children": [
       "vtex.store-components:product-name"
@@ -173,9 +189,15 @@
       "showValueNameForImageVariation": true
     }
   },
+  "product-quantity#product": {
+    "props": {
+      "warningQuantityThreshold": 1,
+      "showUnit": true
+    }
+  },
   "flex-layout.row#buy-button": {
     "props": {
-      "blockClass":"add-button",
+      "blockClass": "add-button",
       "marginTop": 4,
       "marginBottom": 7
     },

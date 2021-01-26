@@ -1,3 +1,19 @@
 .product-identifier--productReference {
   margin-bottom: 1rem;
 }
+
+.product-identifier__label{
+font-size: 0px;
+}
+.product-identifier__label::before{
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  content: "Có";
+}
+.product-identifier__label::after{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    content: "digo de producto";
+}

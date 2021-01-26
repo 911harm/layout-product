@@ -121,9 +121,9 @@
 content:" en "
 }
 
-.shareContainer .shareButtons .shareSocialIcon{
+/* .shareContainer .shareButtons .shareSocialIcon{ */
 /* solo queria ver si podia modificar a machete esos svg */
-}
+/* } */
 
 .swiperBullet--active {
   position: relative;
@@ -132,4 +132,36 @@ content:" en "
 :global(.vtex-flex-layout-0-x-flexRow--share-tarjetas)
 :global(.vtex-store-components-3-x-imageElement){
   margin:auto;
+}
+
+/* marca del producto y link  */
+.productBrandNameLink{
+  font-size: 16px;
+  color: #6d6d6d;
+  text-transform: uppercase;
+  margin-top: 0;
+  text-align: left;
+}
+
+/* nombre del producto */
+.productNameContainer{
+  margin-bottom: 20px;
+  font-family: Lato,sans-serif!important;
+  font-size: 22px;
+  font-weight: 900;
+  color: #242424;
+  text-transform: capitalize;
+  line-height: 1.3;
+  letter-spacing: .3px;
+}
+/* borde de los ThumbActive del product */
+.productImagesThumbActive{
+  border:2px solid #7300e0;
+}
+/* flechas de las imagenes del producto */
+.caretIcon {
+  font-family: icoomon;
+  font-size: 24px;
+  color: #7300e0;
+  display: block;
 }

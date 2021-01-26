@@ -1,0 +1,28 @@
+.availableQuantityContainer{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    background: #fff2f2;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    border: 2px #7300e0;
+    color: #7300e0;
+    margin-bottom: 20px;
+    font-family: Lato,sans-serif;
+}
+.availableQuantityContainer::before{
+content:" Solo quedan ";
+margin-right: 2px;
+}
+.quantitySelectorTitle{
+    color: #242424;
+    font-size: 15px;
+    font-weight: 700;
+}
+.quantitySelectorTitle::after{
+    color: #242424;
+    font-size: 15px;
+    font-weight: 700;
+    content: ":";
+}
