@@ -1,0 +1,16 @@
+
+.arrow--1 :global(.vtex-breadcrumb-1-x-caretIcon){
+    display: none;
+}
+.link{
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+.term{
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--product-breadcrumb){
+    width: 1200px;
+    margin: 0 auto;
+}
