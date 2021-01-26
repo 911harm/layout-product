@@ -1,0 +1,10 @@
+.buttonText{
+    /* color:red; */
+    font-size: 14px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--add-button) :global(.vtex-button) {
+    border-color:#7300e0;
+}
+:global(.vtex-flex-layout-0-x-flexRow--add-button) :global(.vtex-button):hover {
+    box-shadow: 2px 2px 3px rgba(0,0,0,.3);
+}

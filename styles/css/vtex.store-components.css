@@ -1,3 +1,6 @@
+
+
+
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;
@@ -109,5 +112,24 @@
 .productNameContainer {
   color: #3f3f40;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 22px;
+  font-family: Lato,sans-serif!important;
+}
+
+/* el "en" de share  */
+.shareContainer .shareLabel::after{
+content:" en "
+}
+
+.shareContainer .shareButtons .shareSocialIcon{
+/* solo queria ver si podia modificar a machete esos svg */
+}
+
+.swiperBullet--active {
+  position: relative;
+  color: #7300e0;
+}
+:global(.vtex-flex-layout-0-x-flexRow--share-tarjetas)
+:global(.vtex-store-components-3-x-imageElement){
+  margin:auto;
 }
