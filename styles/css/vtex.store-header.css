@@ -1,6 +1,6 @@
 /* barra  de busqueda*/
-:global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
-  width: 55%;
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2n){
+  width: 55% !important;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--login-header) :global(.vtex-login-2-x-container) 
@@ -17,7 +17,27 @@
   color:white;
 }
 
+/* barra menus del header desktop */
+:global(.vtex-sticky-layout-0-x-container--sticky-header) :global(.vtex-flex-layout-0-x-flexRow--category-header){
+  height: 49px;
+  display: flex;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--category-header) :global(.vtex-category-menu-2-x-section--department){
+  background: #6800c9;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--category-header) :global(.vtex-category-menu-2-x-departmentList)
+:global(.vtex-category-menu-2-x-departmentLink){
+  color:white;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+/* hover de cada link  */
+:global(.vtex-flex-layout-0-x-flexRowContent--category-header) :global(.vtex-category-menu-2-x-departmentList)
+:global(.vtex-category-menu-2-x-departmentLink):hover{
+  border-bottom: 1px solid white;
+}
 
 
 /* add transitions */

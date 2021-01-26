@@ -90,11 +90,16 @@
       "flex-layout.col#logo-desktop",
       // "flex-layout.col#category-menu",
       // "flex-layout.col#spacer",
-      "search-bar",
+      "search-bar#header-search",
       // "locale-switcher",
       "flex-layout.col#login-cart-desktop"
       // "login"
     ]
+  },
+  "search-bar#header-search":{
+    "props":{
+      "placeholder":"¿Qué estás buscando?"
+    }
   },
   "flex-layout.row#5-desktop": {
     "props": {
