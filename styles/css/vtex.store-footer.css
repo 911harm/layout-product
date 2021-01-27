@@ -1,11 +1,14 @@
-.row--menu-row {
+.row--menu-row-footer {
   padding-right: 24px;
 }
 
-.row--menu-row .rowContainer {
+.row--menu-row-footer .rowContainer {
   align-items: flex-start;
 }
 
 .row--payment-methods {
   padding-top: 16px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--menu-row-footer){
+  background:#7300e0;
 }
