@@ -1,0 +1,17 @@
+.container--mas-informacion .listContainer{
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.listContainer--mas-informacion-titles .listItemActive{
+    border-bottom: 4px solid #7300e0;
+}
+
+
+.contentContainer{
+    max-width: 64rem;
+    margin: 0 auto;
+    padding-top: 30px;
+}

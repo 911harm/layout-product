@@ -1,0 +1,76 @@
+{
+    "tab-layout#mas-informacion": {
+        "children": [
+            "tab-list#mas-informacion",
+            "tab-content#mas-informacion"
+        ],
+        "props": {
+            "blockClass": "mas-informacion",
+            "defaultActiveTabId": "descripcion"
+        }
+    },
+    "tab-list#mas-informacion": {
+        "props":{
+            "blockClass":"mas-informacion-titles"
+        },
+        "children": [
+            "tab-list.item#descripcion",
+            "tab-list.item#especificaciones",
+            "tab-list.item#comentarios"
+        ]
+    },
+    "tab-list.item#descripcion": {
+        "props": {
+            "tabId": "descripcion",
+            "label": "Descripción",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#especificaciones": {
+        "props": {
+            "tabId": "especificaciones",
+            "label": "Especificaciones"
+        }
+    },
+    "tab-list.item#comentarios": {
+        "props": {
+            "tabId": "comentarios",
+            "label": "Comentarios"
+        }
+    },
+    "tab-content#mas-informacion": {
+        "children": [
+            "tab-content.item#descripcion",
+            "tab-content.item#especificaciones",
+            "tab-content.item#comentarios"
+        ]
+    },
+    "tab-content.item#descripcion": {
+        "children": [
+            "product-description.flixmedia",
+            "flex-layout.row#description"
+        ],
+        "props": {
+            "tabId": "descripcion"
+        }
+    },
+    "tab-content.item#especificaciones": {
+        "children": [
+            "flex-layout.row#specifications-title",
+            // "vtex.product-specifications",
+            "product-specification-group#table"
+        ],
+        "props": {
+            "tabId": "especificaciones"
+        }
+    },
+    "tab-content.item#comentarios": {
+        "children": [
+            "product-reviews",
+            "product-questions-and-answers"
+        ],
+        "props": {
+            "tabId": "comentarios"
+        }
+    }
+}

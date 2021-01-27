@@ -66,6 +66,14 @@
   font-size: 28px;
   font-weight: 700;
 }
+/* titulo de la shelf de la pagina de productos */
+.heading--title-shelf{
+  font-size: 20px;
+  font-weight: 700;
+  color: #5c5c5c;
+  letter-spacing: 1px;
+}
+
 
 @media only screen and (min-width: 640px) {
   .container--question .strong {

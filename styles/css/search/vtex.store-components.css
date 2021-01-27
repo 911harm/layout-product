@@ -10,3 +10,11 @@
   color: #0067C7;
   font-size: .875rem;
 }
+/* marca en el summary del shelf de product*/
+.productBrandName{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: left;
+    color: #5b5b5b;
+    text-transform: uppercase;
+}

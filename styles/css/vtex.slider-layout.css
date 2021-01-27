@@ -22,6 +22,15 @@
 
 .slide--shelf {
   margin-bottom: 25px;
-  padding-left: .5rem;
-  padding-right: .5rem;
 }
+/* contenedor de la shelf */
+/* .sliderLayoutContainer--shelf{
+} */
+.sliderLeftArrow--shelf,.sliderRightArrow--shelf{
+  color:#7300e0;
+}
+.paginationDot--shelf--isActive{
+  background-color:#7300e0;
+}
+/* :global(.vtex-shelf-1-x-sliderContainer){
+} */

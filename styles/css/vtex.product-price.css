@@ -8,8 +8,12 @@
 }
 
 .sellingPrice {
-  color: #3f3f40;
-  font-size: 1.25rem;
+    font-size: 32px;
+    position: relative;
+    text-align: right;
+    width: 100%;
+    color: #ff3e3e;
+    padding-right: 56px;
 }
 
 .sellingPriceValue {
@@ -28,9 +32,17 @@
 }
 
 .sellingPriceValue--summary {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #2E2E2E;
+  /* background:red; */
+  font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-family: Lato,sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #ff3e3e;
 }
 
 .savings--summary {

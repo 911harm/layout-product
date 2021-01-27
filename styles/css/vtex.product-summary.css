@@ -23,10 +23,40 @@
   padding-bottom: 1rem;
 }
 
+.element{
+  border: 1px solid #eee;
+  padding: 5px 12px 12px;
+  border-radius: 0;
+  overflow: hidden;
+}
+/* boton */
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf) .element .vtex-button{
+  background:none !important;
+  border: 1px solid #7300e0;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #7300e0;
+  letter-spacing: .5px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.nameContainer .productNameContainer{
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #151515;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2E2E2E;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #151515;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .container {
