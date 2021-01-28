@@ -1,0 +1,253 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-2-main"
+    ]
+  },
+  "flex-layout.row#footer-2-main": {
+    "children": [
+      "flex-layout.col#footer-main-1",
+      "flex-layout.col#footer-main-2",
+      "flex-layout.col#footer-main-3",
+      "flex-layout.col#footer-main-4"
+    ],
+    "props": {
+      "blockClass": "footer-row-main",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.col#footer-main-1": {
+    "children": [
+      "rich-text#contactanos",
+      "rich-text#llamanos",
+      "rich-text#horario",
+      "rich-text#escribenos",
+      "rich-text#encuentranos"
+    ],
+    "props": {
+      "blockClass": "footer-col-1",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "rich-text#contactanos": {
+    "props": {
+      "text": "CONTÁCTANOS",
+      "blockClass": "title-contactanos"
+    }
+  },
+  "rich-text#llamanos": {
+    "props": {
+      "text": "LLÁMANOS \n (1) 601-4000",
+      "blockClass": "llamanos-contactanos"
+    }
+  },
+  "rich-text#horario": {
+    "props": {
+      "text": "De lunes a sábado \n de 9:00am a 7:00pm domingos y \n feriados de 9:00am a 3:00pm",
+      "blockClass": "horario-contactanos"
+    }
+  },
+  "rich-text#escribenos": {
+    "props": {
+      "text": "ESCRÍBENOS \n [servicioalcliente@realplazago.com](mailto:servicioalcliente@realplazago.com)",
+      "blockClass": "escribenos-contactanos"
+    }
+  },
+  "rich-text#encuentranos": {
+    "props": {
+      "text": "[Encuentra el Real plaza \n más cercano](/nuestras-tiendas)",
+      "blockClass": "encuentranos-contactanos"
+    }
+  },
+  "flex-layout.col#footer-main-2": {
+    "children": [
+      "rich-text#servicios-title",
+      "rich-text#servicios-contenido"
+    ]
+  },
+  "rich-text#servicios-title": {
+    "props": {
+      "text": "SERVICIO AL CLIENTE",
+      "blockClass": "servicios-title"
+    }
+  },
+  "rich-text#servicios-contenido": {
+    "props": {
+      "text": "- [¿Cómo comprar en Real Plaza Go?](/)\n- [Preguntas Frecuentes](/)\n- [Términos y Condiciones](/)\n- [Política de Privacidad](/)",
+      "blockClass": "servicios-contenido"
+    }
+  },
+  "flex-layout.col#footer-main-3": {
+    "children": [
+      "rich-text#secciones-title",
+      "rich-text#secciones-contenido"
+    ]
+  },
+  "rich-text#secciones-title": {
+    "props": {
+      "text": "SECCIONES",
+      "blockClass": "secciones-title"
+    }
+  },
+  "rich-text#secciones-contenido": {
+    "props": {
+      "text": "- [Vende en Real Plaza Go](/)\n- [Nosotros](/)",
+      "blockClass": "secciones-contenido"
+    }
+  },
+  "flex-layout.col#footer-main-4": {
+    "children": [
+      "rich-text#siguenos-title",
+      "social-networks",
+      "rich-text#medios-pago",
+      "image#tarjetas-footer",
+      "rich-text#libro-reclamaciones"
+    ]
+  },
+  "rich-text#siguenos-title": {
+    "props": {
+      "text": "[SÍGUENOS](/)",
+      "blockClass": "siguenos-title"
+    }
+  },
+  "rich-text#medios-pago": {
+    "props": {
+      "text": "[MEDIOS DE PAGO](/)",
+      "blockClass": "medios-pago"
+    }
+  },
+  "rich-text#libro-reclamaciones": {
+    "props": {
+      "text": "[LIBRO DE RECLAMACIONES](/)",
+      "blockClass": "medios-pago"
+    }
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#Products",
+      "vtex.menu@2.x:menu#footer-clothing",
+      "vtex.menu@2.x:menu#footer-decoration",
+      "vtex.menu@2.x:menu#footer-bags",
+      "footer-spacer",
+      "social-networks",
+      "image#tarjetas-footer"
+    ],
+    "props": {
+      "blockClass": "menu-row-footer",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "image#tarjetas-footer": {
+    "props": {
+      "src": "https://realplaza.vtexassets.com/arquivos/light-cards-2.png",
+      "maxHeight": "24px"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "accepted-payment-methods"
+    ],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": [
+        "MasterCard",
+        "Visa",
+        "Diners Club"
+      ]
+    }
+  },
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "rich-text#footer"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ]
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "children": [
+      "flex-layout.col#footer-1-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "accepted-payment-methods",
+      "social-networks",
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile"
+    ]
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  }
+}

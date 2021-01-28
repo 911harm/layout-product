@@ -9,6 +9,107 @@
 .row--payment-methods {
   padding-top: 16px;
 }
-:global(.vtex-flex-layout-0-x-flexRow--menu-row-footer){
+
+.footerLayout{
   background:#7300e0;
+  padding-top: 30px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-row-main) :global(.vtex-flex-layout-0-x-flexColChild){
+  height: auto !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-row-main) :global(.vtex-rich-text-0-x-list){
+  margin:10px;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-row-main){
+  justify-content: center;
+  background:#7300e0;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--footer-col-1){
+  margin:0;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--llamanos-contactanos){
+margin: 0px;
+color:white;
+font-size: 12px;
+letter-spacing: .4px;
+font-weight: 700;
+}
+:global(.vtex-rich-text-0-x-paragraph--horario-contactanos){
+  margin: 0;
+  font-size:12px;
+}
+:global(.vtex-rich-text-0-x-container--title-contactanos){
+  margin:0;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: .4px;
+  font-weight: 700;
+}
+:global(.vtex-rich-text-0-x-paragraph--title-contactanos),:global(.vtex-rich-text-0-x-paragraph--secciones-title),
+:global(.vtex-rich-text-0-x-link--siguenos-title), :global(.vtex-rich-text-0-x-link--medios-pago),
+:global(.vtex-rich-text-0-x-paragraph--siguenos-title){
+  text-decoration: none;
+  display: inline;
+}
+
+/* el escribenos de contacto */
+:global(.vtex-rich-text-0-x-paragraph--escribenos-contactanos){
+  margin: 15px 0 0;
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: .4px;
+    font-weight: 700;
+}
+:global(.vtex-rich-text-0-x-paragraph--escribenos-contactanos) :global(.vtex-rich-text-0-x-link--escribenos-contactanos){
+  color: #fff;
+  text-decoration: none;
+}
+
+
+:global(.vtex-rich-text-0-x-paragraph--encuentranos-contactanos)::before{
+  font-family: icoomon;
+  font-size: 44px;
+  margin-top: -17px;
+  margin-right: 8px;
+  color: #ffc841;
+  content: "\e911";
+  float: left;
+}
+:global(.vtex-rich-text-0-x-link--encuentranos-contactanos){
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+:global(.vtex-rich-text-0-x-paragraph--encuentranos-contactanos){
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* seccion de Servicio al cliente */
+
+:global(.vtex-rich-text-0-x-paragraph--servicios-title),:global(.vtex-rich-text-0-x-paragraph--secciones-title),
+:global(.vtex-rich-text-0-x-link--siguenos-title),:global(.vtex-rich-text-0-x-link--medios-pago){
+  display: inline;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: .4px;
+  font-weight: 700;
+}
+:global(.vtex-rich-text-0-x-link--servicios-contenido), :global(.vtex-rich-text-0-x-link--secciones-contenido){
+  color: #fff;
+  font-size: 11px;
+  line-height: 20px;
+  text-decoration: none;
+}
+:global(.vtex-flex-layout-0-x-flexRow--footer-row-main){
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+.socialNetworksContainer{
+  margin-top: 15px;
 }
