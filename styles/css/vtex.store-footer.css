@@ -113,3 +113,21 @@ font-weight: 700;
 .socialNetworksContainer{
   margin-top: 15px;
 }
+:global(.vtex-store-components-3-x-imageElement--tarjetas){
+margin-bottom: 8px;
+}
+
+/* copyright */
+:global(.vtex-rich-text-0-x-container--copyright){
+    width: 80%;
+    margin: 2px auto;
+    border-top: 2px solid #af9de2;;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--copyright){
+  margin:2px auto;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--copyright){
+font-size: 11px;
+}

@@ -7,8 +7,29 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-2-main"
+      "flex-layout.row#footer-2-main",
+      "flex-layout.row#footer-copy"
     ]
+  },
+  "flex-layout.row#footer-copy": {
+    "children": [
+      "flex-layout.col#footer-col-copy"
+    ],
+    "props": {
+      "blockClass": "footer-copy"
+    }
+  },
+  "flex-layout.col#footer-col-copy": {
+    "children": [
+      "rich-text#copyright"
+    ]
+  },
+  "rich-text#copyright": {
+    "props": {
+      "text": "Todos los derechos reservados Real Plaza Go | Empowered by Hector xD",
+      "blockClass": "copyright",
+      "textPosition":"center"
+    }
   },
   "flex-layout.row#footer-2-main": {
     "children": [
@@ -150,7 +171,8 @@
   "image#tarjetas-footer": {
     "props": {
       "src": "https://realplaza.vtexassets.com/arquivos/light-cards-2.png",
-      "maxHeight": "24px"
+      "maxHeight": "24px",
+      "blockClass":"tarjetas"
     }
   },
   "social-networks": {
