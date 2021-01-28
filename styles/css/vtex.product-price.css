@@ -92,3 +92,48 @@
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
+
+.savingsPercentage--porcentaje-ahorrado::before{
+  content:"-"
+}
+.savingsPercentage--porcentaje-ahorrado{
+  /* texto */
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 3.5px;
+  width: 45px;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 4px;
+  line-height: 25px;
+  display: block;
+/* bloque */
+  background: red;
+  color:white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 47px;
+  height: 25px;
+  background: #f80d0d;
+  margin-top: 0;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+  border-radius: 5px 0 0;
+  float: left;
+}
+
+.savingsPercentage--porcentaje-ahorrado::after{
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-top-color: #f80d0d;
+  border-width: 7px 23px 0;
+  text-shadow: 0 1px 3px transparent;
+}

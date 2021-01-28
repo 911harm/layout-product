@@ -1,6 +1,7 @@
 {
   "product-summary.shelf": {
     "children": [
+      "product-price-savings",
       "stack-layout#prodsum",
       "vtex.store-components:product-brand",
       "product-summary-name",
@@ -11,6 +12,12 @@
       // "product-installments#summary",
       "add-to-cart-button#shelf"
     ]
+  },
+  "product-price-savings":{
+    "props":{
+      "blockClass":"porcentaje-ahorrado",
+      "message":"{savingsPercentage}"
+    }
   },
   "add-to-cart-button#shelf": {
     "props": {
