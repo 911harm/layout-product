@@ -24,8 +24,10 @@
   margin-bottom: 25px;
 }
 /* contenedor de la shelf */
-/* .sliderLayoutContainer--shelf{
-} */
+.sliderLayoutContainer--shelf{
+  padding-top: 2rem;
+  margin-bottom: 6rem;
+}
 .sliderLeftArrow--shelf,.sliderRightArrow--shelf{
   color:#7300e0;
 }
